@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INNOMAX AI-ERP Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+    }
+    .sidebar {
+      width: 240px;
+      height: 100vh;
+      background: #1f2937;
+      color: #fff;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 14px 0;
+      cursor: pointer;
+      padding: 8px 0;
+    }
+    .sidebar ul li:hover {
+      color: #93c5fd;
+    }
+
+    .main {
+      margin-left: 260px;
+      padding: 20px;
+    }
+
+    .topbar {
+      background: #ffffff;
+      padding: 15px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>INNOMAX AI-ERP</h2>
+    <ul>
+      <li>📦 재고 현황</li>
+      <li>📝 구매요청 자동작성</li>
+      <li>📐 도면 분석</li>
+      <li>⚙ 트러블로그</li>
+      <li>📊 대시보드</li>
+      <li>⚡ AI 작업도우미</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="topbar">📊 AI-ERP 메인 대시보드</div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>재고 현황</h3>
+        <p>현재 반입재고: <b>128건</b></p>
+      </div>
+
+      <div class="card">
+        <h3>AI 자동 구매요청</h3>
+        <p>오늘 자동 생성된 요청: <b>3건</b></p>
+      </div>
+
+      <div class="card">
+        <h3>도면 분석 결과</h3>
+        <p>확인 필요 항목: <b>5건</b></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
